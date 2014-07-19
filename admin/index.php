@@ -20,23 +20,23 @@ if(isset($_SESSION['errors']) && $_SESSION['errors'] == true) {
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/styles.css"/>
     <style>
-        body {  background:#567; margin: 50px auto; font-family:'Open Sans',sans-serif; }
-        form{ background:#f0f0f0; padding:6% 4%; }
+        body {  background:  lightgreen; margin: 50px auto;,sans-serif; }
+        form{ background: lightgreen; padding:6% 4%; }
         input[type="text"],input[type="password"]{
             width:92%;
-            background:#fff;
-            margin-bottom:4%;
-            border:1px solid #ccc;
-            padding:4%;
+            background:#ffff;
+            margin-bottom:5%;
+           
+            padding:3%;
             font-family:'Open Sans',sans-serif;
             font-size:95%;
-            color:#555;
+            color: green;
         }
         button[type="submit"]{
             width:100%;
-            background:#3399cc;
+            background: green;
             border:0;
-            padding:4%;
+            padding:3%;
             font-family:'Open Sans',sans-serif;
             font-size:100%;
             color:#fff;
@@ -45,31 +45,17 @@ if(isset($_SESSION['errors']) && $_SESSION['errors'] == true) {
             -webkit-transition:background .3s;
         }
         button[type="submit"]:hover{
-            background:#2288bb;
-        }
-        #login { 
-            width:400px;
-            margin:0 auto;
-            margin-top:15px;
-            transition:opacity 1s;
-            -webkit-transition:opacity 1s;
+            background: green;
         }
         #login h1{
-            background:#3399cc;
+            background:green;
             padding:20px 0;
             font-size:140%;
             font-weight:300;
             text-align:center;
             color:#fff;
         }
-        #triangle{
-            width:0;
-            border-top:12x solid transparent;
-            border-right:12px solid transparent;
-            border-bottom:12px solid #3399cc;
-            border-left:12px solid transparent;
-            margin:0 auto;
-        }
+        
     </style>
     <title>Админ Панел</title>
 </head>
