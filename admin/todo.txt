@@ -1,0 +1,12 @@
+﻿dobavi stranica
+spisyk stranici
+redaktirai stranici
+iztrii stranic
+____________________________________
+
+BAZA DANNI PRIODUKTI
+dobavi produkt
+spisyk produkti
+redaktirai produkt
+iztrii
+redaktirai snimka
