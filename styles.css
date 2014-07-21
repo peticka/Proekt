@@ -3,10 +3,10 @@ h1 {float: left; width: 1100px;}
 h1 a {font-size: 50px; color: #a00; font-family: cursive; text-decoration: none;  }
 h2{ margin-bottom: 60px; font-size: 25px; color: #000; margin-left: 200px; }
 #logo{width: 150px;
-	float: left;
+	float: right;
 	margin-right: 100px;
-	margin-bottom: 10px;
-	margin-top: 5px;}
+	margin-bottom: 30px;
+	margin-top: 1px;}
 .box-shadow-menu ul ul{
 display: none;
 }
@@ -19,9 +19,9 @@ border: 1px solid #a0a; padding: 5px; text-align: center; background: rgba(0, 18
 .box-shadow-menu ul li a {color: #a00; font-weight: bold; display: block; text-decoration: none; padding: 15px 10px 15px 20px;}
 .box-shadow-menu:hover {text-decoration: underline;}
 .box-shadow-menu.hidden {display: none;}
-div.column {width: 20%; float: left; padding-right: 2%; margin: 20px 90px;}
+div.column {width: 22%; float: left; padding-left: 2%; margin: 40px 90px;}
 
-div.border{ width: 45%; float: right; margin: 0px 10px; }
+div.border{ width: 35%; float: left; margin-left: 70px;  }
 
 .knigi{float: left; margin-left: 15px; margin-right: 15px;}
 div.tekst{}
@@ -121,7 +121,10 @@ footer {
 	float: right;
 }
 
-
+.productsText {
+	text-align: left;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+}
 
 
 

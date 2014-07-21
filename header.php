@@ -1,29 +1,40 @@
+<?php
+
+require_once('include/bootstrap.php');
+$sql = 'SELECT title FROM pages';
+$data = db_select($sql);
+?>
 <html>
 <head>
     <title></title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <a href="index.php">
-                <img src="images/logo.png" alt="logo" id="logo">
-            </a>
-            <a href="index.php">
-                <img src="images/title.png" alt="title" id="title">
-            </a>
-        </header>
-        <div class="spacer"></div>
-        <nav>
-            <ul>
-               <li><a href="index.php">Home</a></li>
-               <li><a href="about.php">About Us</a></li>
-               <li><a href="contact.php">Contact Us</a></li>
-               <li><a href="catalog.php">Catalog</a></li>
-               <li><a href="products.php">Products</a></li>
-               <li><a href="blog.php">Blog</a></li>
-               <li><a href="news.php">News</a></li>
+	<header>
+	
+		<h1><a href="home.php">Books Store </a></h1>
+		<a href="home.php"><img src="logo.jpg" id="logo"></a>
+		
+		
+	<div class="box-shadow-menu">
+	  <ul>
+		<li><a href="home.php">Home</a></li>
+		<li><a href="Aboutus.html">About Us</a></li>
+		<li><a href="contact.php" >Contact</a></li>
+		<li><a href="products.html">Products</a></li>
+		<li><a href="">Blog</a></li>
+		<li><a href="">News</a></li>
+	</div>
+	
+	     <section>
+		<article>
+		<div class="tekst">
+<div class="box-shadow-menu"></div>
+               <!-- <li><a href="news.php">News</a></li> -->
+              <?php foreach($data as $key => $value) : ?>
+               <li><a href=""><?=$value['title']?></a></li>
+              <?php endforeach; ?>
             </ul>
         </nav>
         <div id="content">
