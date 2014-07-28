@@ -45,7 +45,7 @@ require_once('include/header.php');
 		</label>
 		<br>
 		<?php if ($news['image'] != '' && $_GET['action'] != 'delete') { ?>
-		<img src="news_image/<?php echo $news['image']?>" width="100"><a href="news_edit.php?id=<?=$news['id'] ?>&action=delete" style="position: absolute;">[X]</a>
+		<img src="news_images/<?php echo $news['image']?>" width="100"><a href="news_edit.php?id=<?=$news['id'] ?>&action=delete" style="position: absolute;">[X]</a>
 		<br>
 		<?php } ?>
 		<label>

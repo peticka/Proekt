@@ -1,7 +1,6 @@
 <?php
 require_once('include/bootstrap.php');
 
-$results = products_get_all_count();
 
 if (isset($_GET['action'])) {
 
@@ -18,6 +17,7 @@ if (isset($_GET['action'])) {
 			break;
 	}
 }
+$results = products_get_all_count();
 
 require_once('include/header.php');
 ?>

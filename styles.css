@@ -1,7 +1,8 @@
 * {font-family: Helvetica, Arial, sans-serif;}
-h1 {float: left; width: 1100px;}
+h1 {float: left; width: 1000px;}
 h1 a {font-size: 50px; color: #a00; font-family: cursive; text-decoration: none;  }
-h2{ margin-bottom: 60px; font-size: 25px; color: #000; margin-left: 200px; }
+h2{ margin-bottom: 60px; font-size: 25px; color: #000; margin-top: 1000px; }
+h3{margin-right: 350px;}
 #logo{width: 150px;
 	float: right;
 	margin-right: 100px;
@@ -19,20 +20,22 @@ border: 1px solid #a0a; padding: 5px; text-align: center; background: rgba(0, 18
 .box-shadow-menu ul li a {color: #a00; font-weight: bold; display: block; text-decoration: none; padding: 15px 10px 15px 20px;}
 .box-shadow-menu:hover {text-decoration: underline;}
 .box-shadow-menu.hidden {display: none;}
-div.column {width: 22%; float: left; padding-left: 2%; margin: 40px 90px;}
+.column {width: 22%; float: left; padding-left: 40px; margin: 40px 90px; }
+.box {width: 600px; margin-right: 100px; margin-top: 150px; }
 
-div.border{ width: 35%; float: left; margin-left: 70px;  }
 
-.knigi{float: left; margin-left: 15px; margin-right: 15px;}
-div.tekst{}
+div.border{ width: 35%; float: left; margin-left: 90px; margin-top: 35px;   }
+
+.knigi{float: left; margin-left: 20px; margin-right: 15px;}
+div.tekst{margin-right: 55px;}
 div.form{margin-left: 660px; }
 h2{margin-left:25px; color: #99ccff;}
 #name{margin: 10px 37px; }
-#email{margin: 10px 37px;}
+#email{margin: 10px 40px;}
 #phone{margin: 10px 37px;}
-#text{margin: 10px 20px;}
+#text{margin: 15px 65px;}
 #submit{margin-bottom: 140px; float:left;}
-#karta{float: left; margin-top: 30px;`}
+#karta{float: right; margin-top: 30px; margin-right: 20px;}
 
 div.windows{margin-left: 65px; margin-right: 15px; float: left;}
 div.corel{ float: left; margin-left: 60px;}
@@ -45,25 +48,19 @@ background-color: #5c87b2;
 color: #99ccff;
 }
 
-
-
-#contact {
-     
-	margin-bottom: 15px;
-	color: #99ccff;}
-
  
 #contactForm {
-	font-size: 10px;
+	font-size: 15px;
 	color: #99ccff;
 	width: 300px;
 	float: right;
-	margin-right: 240px;
-	margin-bottom: 10px;
+	margin-right: 440px;
+	margin-top: 10px;
 }
 
 
 #aboutUs p {
+   
 	margin-bottom: 30px;
 	color: #99ccff;
 }
@@ -125,6 +122,155 @@ footer {
 	text-align: left;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
 }
+
+	.latestNews h1 {
+	margin-bottom: 100px;
+}
+
+.latestNews p {
+	margin-top: 10px;
+	color: #99ccff;
+}
+
+.latestNews a {
+	color: #a00;
+}
+
+.spacer {
+	text-align: right;
+	}
+	
+#search
+{
+    background-color: #eaf8fc;
+    background-image: linear-gradient(#fff, #d4e8ec);
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;            
+    width: 94%;
+    height: 35px;
+    padding: 25px;
+    overflow: hidden; /* Clear floats */
+    margin-bottom: 50px;
+}
+#search, 
+#submit {
+    float: left;
+}
+#search {
+    padding: 5px 9px;
+    height: 35px;
+    width: 450px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+#submit
+{       
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  
+}
+
+.pagination > a, .pagination > span {
+  float: left0;
+  margin-left: 7px;
+  padding: 0 6px;
+  min-width: 17px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d4d4d4;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.catalogProducts {
+
+
+ 
+	width: 100%;
+	height: 340px;
+	margin-bottom: 25px;
+	float: left;
+}
+
+.catalogProducts img {
+
+
+	display: block;
+	max-width: 100%;
+	background-color: #eaf8fc;
+	border-color: #c4d9df #a4c3ca;
+	margin: 30px;	
+	float: left;
+}
+
+.catalogTitle {
+	float: left;
+	margin-top: 100px;
+}
+.catalogPrice {
+	float: right;
+	margin: 100px 50px;
+	color: #fa0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

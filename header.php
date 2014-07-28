@@ -12,29 +12,31 @@ $data = db_select($sql);
 </head>
 <body>
 	<header>
-	
+
 		<h1><a href="home.php">Books Store </a></h1>
 		<a href="home.php"><img src="logo.jpg" id="logo"></a>
-		
+
 		
 	<div class="box-shadow-menu">
 	  <ul>
+
 		<li><a href="home.php">Home</a></li>
-		<li><a href="Aboutus.html">About Us</a></li>
+		<li><a href="Aboutus.php">About Us</a></li>
 		<li><a href="contact.php" >Contact</a></li>
-		<li><a href="products.html">Products</a></li>
-		<li><a href="">Blog</a></li>
-		<li><a href="">News</a></li>
-	</div>
+		<li><a href="products.php">Products</a></li>
+	
+
+	
 	
 	     <section>
 		<article>
-		<div class="tekst">
+		
 <div class="box-shadow-menu"></div>
                <!-- <li><a href="news.php">News</a></li> -->
               <?php foreach($data as $key => $value) : ?>
                <li><a href=""><?=$value['title']?></a></li>
               <?php endforeach; ?>
-            </ul>
-        </nav>
+            </div>
+			</ul>
+        
         <div id="content">

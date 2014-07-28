@@ -3,7 +3,7 @@
 function db_select($sql)
 {
     global $db_connection;
-    $res = mysqli_query($db_connection, $sql);
+    $res = mysqli_query($db_connection, $sql) or die(mysqli_error($db_connection));
     $result = array();
     while ($row = mysqli_fetch_assoc($res)) {
         $result[] = $row;

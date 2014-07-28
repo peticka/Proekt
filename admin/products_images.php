@@ -5,10 +5,12 @@ $product = products_get($_GET['id']); // get product title
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {  
         case 'delete':
-            $getProductImage = products_get_image($_GET['id'], $_GET['products_id']); // get image for the product
-            unlink('products_images/'. $getProductImage['image_name']);
+            $getProductImage = products_images_get($_GET['id'], $_GET['products_id']); // get image for the product
+            
+			unlink('products_images/'. $getProductImage['title']);
             db_delete('products_images', $getProductImage['id']);
-            redirect('products_images.php?id='. $_GET['products_id'].'&action=delete_image');
+			
+            redirect('products_images.php?id='.$_GET['products_id'].'&action=delete_image');
         break;
         case 'add':
             $add = true;    
@@ -26,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $fileError = true;
     }
     $data = array(
-        'image_name' => $filename,
+        'title' => $filename,
         'products_id' => $_GET['id']
     );
     if (!$fileError) {
@@ -38,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 require_once('include/header.php');
 ?>
 <div class="content">
-    <h2> Добави или изтрий снимка за продукт: <em><?= $product['title']?></em> </h2>
+    <h2> Добави или изтрий снимка за продукт: <em><?=$product['title']?></em> </h2>
     <form action="" method="post" enctype="multipart/form-data">
         <label>
             Качете картинка
@@ -65,7 +67,7 @@ require_once('include/header.php');
                 $sliced = $products;        
         ?>
                     <td>
-                        <img src="products_images/<?=$value['image_name']?>" alt="" width="100">
+                        <img src="products_images/<?=$value['title']?>" alt="" width="100">
                         <a href="products_images.php?id=<?=$value['id']?>&products_id=<?=$product['id']?>&action=delete" style="position: absolute;">[x]</a>
                     </td>
         <?php } ?>

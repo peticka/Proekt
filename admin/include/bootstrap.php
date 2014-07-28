@@ -19,7 +19,7 @@ require_once('../functions/validate.php');
 
 // //module functions
 require_once('../functions/news.php');
-// require_once('../functions/pages.php');
+require_once('../functions/pages.php');
 require_once('../functions/products.php');
 
 require_once('classes/IItem.php');

@@ -1,13 +1,14 @@
 <?php
 require_once('include/bootstrap.php');
 
+$result = news_comments_get_all($_GET['id']);
+
 if (isset($_GET['action']) && $_GET['action'] == 'delete') {
     db_delete('comments', $_GET['comment_id']);
 
     redirect('comments.php?id='.$_GET['id']);
 }
 
-$result = news_comments_get_all($_GET['id']);
 
 require_once('include/header.php');
 ?>

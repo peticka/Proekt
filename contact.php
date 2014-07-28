@@ -1,34 +1,16 @@
-<!DOCTYPE html>
 <?php 
-	
+
+require_once('header.php');
+
+
 ?>
-<html>
-<head>
-	 <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<header>
-		<h1><a href="home.html">Books Store </a></h1>
-		<a href="home.html"><img src="logo.jpg" id="logo"></a>
-		
-	</header>
-	<div class="box-shadow-menu">
-	  <ul>
-		<li><a href="home.html">Home</a></li>
-		<li><a href="Aboutus.html">About Us</a></li>
-		<li><a href="contact.php" >Contact</a></li>
-		<li><a href="products.html">Products</a></li>
-		<li><a href="blog.php">Blog</a></li>
-		<li><a href="news.php">News</a></li>
-	</div>
-	    
 	
 		
+		<h3>
+		 The Elephant Bookstore has now moved out of the Tea House and has settled into its <br> spacious new premises on one of Plovdiv's funkiest shopping streets right in the heart of Sofia at:                
+        </h3>
 		
-		  The Elephant Bookstore has now moved out of the Tea House and has settled into its <br> spacious new premises on one of Plovdiv's funkiest shopping streets right in the heart of Sofia at:                
-        
 		
-		<p>
 		<h4>
 Ulitsa Tsar Ivan Shishman 31
 
@@ -36,7 +18,7 @@ Ulitsa Tsar Ivan Shishman 31
 
 10am - 9pm every day
 </h4>
-</p>
+
       <p>
 	  <img src="karta.jpg" id="karta">
       </p>
@@ -45,7 +27,7 @@ Ulitsa Tsar Ivan Shishman 31
 						
          
 	 		<form id="contactForm">	
-				<h2>Contact Form</h2>
+				Contact Form
 					<p class="name">
 						<label for="name">Name</label>
 						<input type="text" name="name" id="name" placeholder="Enter your name here..." />

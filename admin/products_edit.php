@@ -25,12 +25,12 @@ require_once('include/header.php');
 		</label>
 		<br>
 		<label>
-			Заглавие
+			Цена
 			<input type="text" name="price" value="<?php echo $product['price']?>">
 		</label>
 		<br>
 		<label>
-			Съдържание
+			Описание
 			<textarea name="content"><?php echo $product['content']?></textarea>
 		</label>
 		<br>
