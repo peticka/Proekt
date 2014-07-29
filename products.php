@@ -15,14 +15,12 @@ $data = db_select($sql);
 ?>
 <html>
 <head>
-	<h1>Books Store </h1>
+	<h1>Nashite produkti </h1>
 	
 </head>
 <body>
 				
 	
-		<article>
-		<fieldset>
 
 
 <?php 
@@ -62,7 +60,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['catalog'] !== '') {
 <div class="box">
 
 			
-			<section>
 				
 				<form  method="post">
 					<label for="search">Search:<input type="text" name="catalog" id="catalog" value=""></label>
@@ -76,44 +73,41 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['catalog'] !== '') {
 						<option>name</option>
 						<option>price</option>
 					</select>			
-				</label> 		
+				</label> 
+				
 			</div>
-			</section>
-		</fieldset>
+			
+	
 		
 		
-		<fieldset id="">
+		
 
 		<?php foreach($data as $key => $value) {
-			//$products_id=$value['id'];
+		
 			?>
 		
-		<fieldset>
 		
-		<div class="catalogProducts">
 			
-				
+						<div class="catalogProducts">
 				<a href="details.php?id=<?=$value['id']?>"><img src="admin/products_images/<?=$value['image'];?>" ></a>
 						
 
-				
+		
 				<span class="catalogTitle"><?=$value['title'];?></span>
 				<span class="catalogPrice"><?=$value['price'];?></span>
-				<br>
-			</div>
-			<p class="comment"><?=$value['content'];?></p>
+				
 			
-		</fieldset>
+			<span class="catalogTitle"><?=$value['content'];?></span>
+			</div>
 		
-		<?php }; ?>
+<?php }; ?>
 		
-		</article>
+		
 	
-	</fieldset>
-	<?php require_once('includes/footer.php'); ?>
+		
 </body>
-
 </html>
+
 
 		
 		

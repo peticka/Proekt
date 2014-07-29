@@ -20,11 +20,11 @@ border: 1px solid #a0a; padding: 5px; text-align: center; background: rgba(0, 18
 .box-shadow-menu ul li a {color: #a00; font-weight: bold; display: block; text-decoration: none; padding: 15px 10px 15px 20px;}
 .box-shadow-menu:hover {text-decoration: underline;}
 .box-shadow-menu.hidden {display: none;}
-.column {width: 22%; float: left; padding-left: 40px; margin: 40px 90px; }
-.box {width: 600px; margin-right: 100px; margin-top: 150px; }
+.column {width: 37%; float: left; padding-left: 30px; margin: 34px 60px; }
+.box {width: 600px; margin-left: 30px; margin-top: 10px; margin-bottom:20px; }
 
 
-div.border{ width: 35%; float: left; margin-left: 90px; margin-top: 35px;   }
+.border{ width: 27%; float: left; margin-left: 90px; margin-top: 35px;   }
 
 .knigi{float: left; margin-left: 20px; margin-right: 15px;}
 div.tekst{margin-right: 55px;}
@@ -50,14 +50,12 @@ color: #99ccff;
 
  
 #contactForm {
-	font-size: 15px;
-	color: #99ccff;
-	width: 300px;
-	float: right;
-	margin-right: 440px;
-	margin-top: 10px;
+	font-size: 20px;
+	font-style: Verdana, Tahoma, sans-serif;
+	width: 350px;
+	float: left;
+	margin-right: 90px
 }
-
 
 #aboutUs p {
    
@@ -120,7 +118,12 @@ footer {
 
 .productsText {
 	text-align: left;
+	margin-top: 15px;
+	margin-bottom: 30px;
 	font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+.productsText p {
+	color: red;
 }
 
 	.latestNews h1 {
@@ -137,8 +140,9 @@ footer {
 }
 
 .spacer {
-	text-align: right;
-	}
+	clear: both;
+}
+
 	
 #search
 {
@@ -152,7 +156,7 @@ footer {
     height: 35px;
     padding: 25px;
     overflow: hidden; /* Clear floats */
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 #search, 
 #submit {
@@ -218,29 +222,37 @@ footer {
 }
 
 .catalogProducts {
-
-
- 
-	width: 100%;
-	height: 340px;
+	background-color: #eaf8fc;
+	border-radius: 35px;
+	border-width: 1px;
+	border-style: solid;
+	border-color:  #a4c3ca #a4c3ca; 
+	width: 90%;
+	height: 300px;
 	margin-bottom: 25px;
 	float: left;
+	margin-left: 20px;
 }
 
 .catalogProducts img {
-
-
+	border: 1px;
+	max-height: 100%;
 	display: block;
 	max-width: 100%;
-	background-color: #eaf8fc;
-	border-color: #c4d9df #a4c3ca;
-	margin: 30px;	
+
+	border-radius: 35px;
+	margin-bottom: 10px;
 	float: left;
+	margin-left: 10px;
+	margin-right: 25px;
+
+	
 }
 
 .catalogTitle {
 	float: left;
 	margin-top: 100px;
+	color: #fa0000;
 }
 .catalogPrice {
 	float: right;
@@ -248,7 +260,18 @@ footer {
 	color: #fa0000;
 }
 
+#content {
+	width: 950px;
+	float: left;
+margin-left; 10px;
 
+	
+}
+
+.comment{
+	float: left;
+	margin-bottom: 10px;
+}
 
 
 

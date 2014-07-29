@@ -13,15 +13,15 @@ $data = db_select($sql);
 				<div class="column">	
 					<img src="kniga1.jpg">
 					<div class="productsText">
-						<h3>Tymnata strana na lubovta</h3>
-						<p><h3>Cena: 16<sup> 00 </sup> lv. </h3></p>
+						Tymnata strana na lubovta
+						<p>Cena: 16<sup> 00 </sup> lv.</p>
 					</div>
 				
 				
 					
 					<img src="kniga2.jpg">
 					<div class="productsText">
-						<h3>Dante's Antichthon<h3>
+						Dante's Antichthon
 						<p>Cena: 18<sup> 90 </sup> lv.</p>
 					</div>
 					</div>
@@ -31,20 +31,21 @@ $data = db_select($sql);
 					<div class="border">
 					<img src="vk.jpg" >
 					<div class="productsText">
-						 <h3>The Fault in Our Stars </h3>
-						<p> <h3>Cena: 15<sup> 50 </sup> lv. </h3></p>
+						 The Fault in Our Stars 
+						<p>Cena: 15<sup> 50 </sup> lv.</p>
 				
-				
+				</div>
 				
 					<img src="html.jpg">
 					<div class="productsText">
-						<h3>HTML 5 & CSS 3</h3>
-						<p><h3> Cena: 19<sup> 95 </sup> lv.</h3>	</p>
+						HTML 5 & CSS 3
+						<p> Cena: 19<sup> 95 </sup> lv.</p>
 						
 					</div>
 					
+					
 					</div>
-					</div>
+					
 					
 				
 				<div class="spacer"></div>
@@ -63,5 +64,6 @@ $data = db_select($sql);
 					
 				</article>
 			</section>
-			<?php require_once('include/footer.php'); ?>
-			
+				
+<?php
+require_once('include/footer.php');
