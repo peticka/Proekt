@@ -48,7 +48,7 @@ $data = db_select($sql);
 					
 					
 				
-				<div class="spacer"></div>
+				
 			</section>
 			<section class="latestNews">
 				<article>

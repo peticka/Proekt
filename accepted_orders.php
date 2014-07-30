@@ -24,13 +24,13 @@ $data = db_select($sql);
 			<article>
 			<div>
 			<?php foreach ($data as $key => $value):?>
-			<p><strong>THANK YOU!</strong></p>
+			<p><strong>BLAGODARIM VI!</strong></p>
 			
 			<p>
-				You have just ordered the product - <strong><?php echo $data[0]['product_title']?></strong>
+				Tuko shto porychaxte: - <strong><?php echo $data[0]['product_title']?></strong>
 			</p>
 			<p>
-			     For confirmation of your order, please send the amount of <strong><?php echo $data[0]['product_price']?></strong> by using the account IBANBG121416 with a reference number <strong><?php echo $data[0]['id']?></strong>.
+			    Za da potvyrdite porychkata, molq izpratete sumata ot <strong><?php echo $data[0]['product_price']?></strong> leva na posochenata smetka: IBANBG482947 <strong><?php echo $data[0]['id']?></strong>.
 			</p>
 			<?php endforeach; ?>
 			</div>

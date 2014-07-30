@@ -54,11 +54,12 @@ color: #99ccff;
 	font-style: Verdana, Tahoma, sans-serif;
 	width: 350px;
 	float: left;
-	margin-right: 90px
+	margin-right: 90px;
+	
 }
 
 #aboutUs p {
-   
+  
 	margin-bottom: 30px;
 	color: #99ccff;
 }
@@ -126,8 +127,8 @@ footer {
 	color: red;
 }
 
-	.latestNews h1 {
-	margin-bottom: 100px;
+	.latestNews {
+	margin-bottom: 10px;
 }
 
 .latestNews p {

@@ -1,9 +1,37 @@
 <?php 
+require_once('include/bootstrap.php');
+
+$success = false;
+$errors = false;
+
+if($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['name'] !== '' && $_POST['email'] !== '' && $_POST['phone'] !== '' && $_POST['text'] !== '') {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+	$phone = $_POST['phone'];
+	$text = $_POST['text'];
+    
+	db_insert('contact_form', array(
+					'name' => $name,
+					'email' => $email,
+					'phone' => $phone,
+					'text' => $text,
+                    
+                ));
+
+            $success = true;
+} else {
+        $errors = true;
+}
+	
+	
+
 
 require_once('header.php');
 
 
 ?>
+
+
 	
 		
 		<h3>
@@ -24,11 +52,16 @@ Ulitsa Tsar Ivan Shishman 31
       </p>
 			
 					
-						
+		
          
-	 		<form id="contactForm">	
-				Contact Form
+	 		
+				<h3>Contact Form</h3>
 					<p class="name">
+					
+
+
+	 <form id="contactForm" action="" method="post">	
+										
 						<label for="name">Name</label>
 						<input type="text" name="name" id="name" placeholder="Enter your name here..." />
 					</p>	
